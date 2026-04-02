@@ -82,7 +82,7 @@ app.get('/user/:id', async (req,res) =>{
 })
 
 
-//export default app;
-app.listen(port, () => {
-  console.log(`App live on port: ${port}`)
-})
+export default app;
+// app.listen(port, () => {
+//   console.log(`App live on port: ${port}`)
+// })
