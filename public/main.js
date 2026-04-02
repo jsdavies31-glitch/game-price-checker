@@ -134,7 +134,7 @@ async function writeToRedis(data){
    console.log("express says ", result)
 
     } catch (err){
-        console.error("error sending request")
+        console.error("error sending request", err)
     }
     
 }

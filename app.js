@@ -27,6 +27,7 @@ app.get('/',(req,res) => {
 
 
 app.post('/user/cards',(req,res) => {
+    console.log('route')
     const {id:userID, data:card} = req.body
     console.log(`request received card is ${card.title}`)
 
