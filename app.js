@@ -37,7 +37,7 @@ app.post('/user/cards',(req,res) => {
     id: userID
     }) 
 
-    setRedis(card,userID)
+    //setRedis(card,userID)
 
 })
 
