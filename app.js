@@ -6,6 +6,7 @@ import fs from 'fs/promises';
 import { Redis } from '@upstash/redis'
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+//import serverless from 'serverless-http';
 
 const port = 3000
 const redis = Redis.fromEnv()
@@ -81,6 +82,7 @@ app.get('/user/:id', async (req,res) =>{
 })
 
 
-app.listen(port, () => {
-  console.log(`App live on port: ${port}`)
-})
+export default app;
+// app.listen(port, () => {
+//   console.log(`App live on port: ${port}`)
+// })
